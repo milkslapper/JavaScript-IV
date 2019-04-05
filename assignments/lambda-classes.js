@@ -54,8 +54,8 @@ class ProjectManagers extends Student{
     standUp(){
         return(`${this.name} announces to ${this.gradClassName}, @channel standy times!`)
     }
-    debugsCode(){
-        return(`${this.name} debugs ${fred.name}'s code on ${this.favLanguage}`)
+    debugsCode(Student){
+        return(`${this.name} debugs ${Student}'s code on ${this.favLanguage}`)
     }
 }
 
@@ -139,7 +139,7 @@ const fred = new Student({
 
 console.log(greg.age);
 console.log(david.standUp());
-console.log(bruce.debugsCode())
+console.log(bruce.debugsCode('greg'))
 console.log(bruce.gender);
 console.log(greg.listsSubjects());
 console.log(jeff.location);
